@@ -56,7 +56,7 @@ int main(int argc, char **argv) {
 	setsockopt(socket_fd,SOL_SOCKET,SO_REUSEADDR,(char *)&on,sizeof(on));
 
 	/* Set up the server address to listen on */
-	/* The memset stes the address to 0.0.0.0 which means */
+	/* The memset sets the address to 0.0.0.0 which means */
 	/* listen on any interface. */
 	memset(&server_addr,0,sizeof(struct sockaddr_in));
 	server_addr.sin_family=AF_INET;
